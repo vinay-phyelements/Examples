@@ -1,0 +1,18 @@
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .logo img {
+    height: 40px; 
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 24px;
+    list-style-type: none;
+    font-weight: 500;
+  }
+  
