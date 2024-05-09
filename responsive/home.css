@@ -1,0 +1,84 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.training-section {
+  padding-bottom: 50%;
+  width: 100%;
+  background-size: cover;
+}
+
+.training-section h1 {
+  text-align: center;
+  padding: 20px 0px;
+}
+
+img {
+  height: 50px;
+  width: 50px;
+}
+
+.container {
+  width: 1200px;
+  margin: auto;
+  padding: 15px 15px;
+  justify-content: space-around;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.training-items {
+  flex-basis: 24%;
+  margin: 10px 0px;
+  background-color: white;
+  text-align: center;
+  box-shadow: 0px 0px 10px 3px lightgray;
+  padding: 20px 0px;
+}
+
+.training-items h3 {
+  padding: 10px 10px;
+}
+
+.training-items p {
+  font-size: 12px;
+  padding: 5px 10px;
+  text-align: justify;
+}
+
+.training-items button {
+  background-color: blue;
+  padding: 7px 15px;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  margin: 10px 0px;
+}
+
+.training-items:hover {
+  background: blue;
+}
+
+.training-items:hover h3,
+.training-items:hover p {
+  color: white;
+}
+
+.training-items:hover button {
+  background: white;
+  color: blue;
+}
+
+@media screen and (min-width: 100px) and (max-width: 700px) {
+  .container {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .training-items {
+    margin: 10px;
+  }
+}

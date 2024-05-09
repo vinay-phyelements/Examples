@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Setting Display to Grid</title>
+<style>
+    .fl{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* This would display the children elements in  three equal columns with equal width */
+        gap: 5px; /* To set a gap between  thegrid items */
+    }
+    .gr {
+        padding: 20px; 
+        background-color: #0000FF; 
+        border: 1px solid #ffff; /* I added a border all round each column for better visibility and separation of the columns */
+    }
+</style>
+</head>
+<body>
+
+<div class="gr">
+    <div class="gr">Content 1</div>
+    <div class="gr">Content 2</div>
+    <div class="gr">Content 3</div>
+    <div class="gr">Content 4</div>
+    <div class="gr">Content 5</div>
+</div>
+
+</body>
+</html>

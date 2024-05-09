@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+body {
+  font-family: "Lato", sans-serif;
+}
+.sidenav{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #cd3434;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.menu {
+    width: 100%;
+    text-align: center;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex; 
+    justify-content: center; 
+}
+
+.menu ul li {
+    margin-right: 10px;
+}
+
+.menu ul li a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: lightblue;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.menu ul li a:hover {
+    background-color: blue;
+    color: white;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.col, .colss {
+    width: 45%; 
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.aside {
+    background-color: lightgray;
+    padding: 20px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+  .row {flex-direction: column;}
+  .col, .colss {flex: 0 0 calc(100% - 20px);}
+}
+    </style>
+</head>
+<body>
+    <div class="sidenav" id="mySidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#">About</a>
+    <a href="#">Service</a>
+    <a href="#">Client</a>
+    <a href="#">Contact</a>
+    </div>
+    
+    <h2>Animated side navbar example</h2>
+    <p>Click on the element below to open the side navigation menu.</p>
+    <span style="font-size: 30px; cursor: pointer;"onclick="openNav()">&#9776; Open</span>
+    <div class="row">
+        <div class="menu">
+            <ul>
+                <li><a href="first.html">Flight</a></li>
+                <li><a href="#">City</a></li>
+                <li><a href="#">Island</a></li>
+                <li><a href="#">Fund</a></li>
+            </ul>
+        </div>
+        <div class="col">
+            <h1>The city</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi, itaque.</p>
+        </div>
+        <div class="colss">
+            <div class="aside">
+                <h2>What?</h2>
+                <p>Chania is a city on the island of Crete.</p>
+                <h2>Where?</h2>
+                <p>Crete is a Greek island in the Mediterranean Sea.</p>
+                <h2>How?</h2>
+                <p>You can reach Chania airport from all over Europe.</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+        }
+        </script>
+</body>
+</html

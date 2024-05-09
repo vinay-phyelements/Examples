@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div1 {
+            border: 1px solid red;
+            margin: 15px;
+            height: 150px;
+            width: 300px;
+            background-color: aqua;
+        }
+
+        .div2 {
+            border: 1px solid rgb(64, 0, 255);
+            margin: 15px;
+            height: 180px;
+            width: 350px;
+            padding: 30px;
+            background-color: bisque;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        textarea[name="message"] {
+            margin-left: 15px;
+            margin-top: 15px; /* Add margin-top to separate the textarea */
+        }
+
+        .menuitem {
+            background: #CDF0F6;
+            border: 1px solid #d4d4d4;
+            border-radius: 4px;
+            list-style-type: none;
+            margin: 4px;
+            padding: 2px;
+        }
+
+        #menulist {
+            margin: 0;
+            padding: 0;
+            display: flex; /* Display menu items in a row */
+            flex-wrap: wrap; /* Allow items to wrap to the next line */
+        }
+
+        #leftsidebar {
+            width: auto;
+        }
+
+        .wrapper {
+            overflow: auto;
+            display: flex; /* Display wrapper as flex container */
+        }
+
+        #main {
+            margin-left: 4px;
+            flex-grow: 1; /* Allow main content to grow to fill available space */
+        }
+
+        @media screen and (min-width: 480px) {
+            body {
+                background-color: blueviolet;
+            }
+
+            #leftsidebar {
+                width: 200px;
+            }
+
+            #main {
+                margin-left: 16px; /* Adjust margin to account for the sidebar width */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="div1">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor unde voluptatibus odit? Laudantium deleniti magnam facilis animi neque. Temporibus unde totam natus consequatur iure error molestiae sequi libero. Alias, praesentium!
+    </div>
+
+    <div class="div2">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum, aspernatur aut amet dolor excepturi hic unde quaerat rerum laudantium in temporibus animi reprehenderit mollitia, obcaecati incidunt! Illum odio ipsa dolorem?
+    </div>
+
+    <div class="wrapper">
+        <div class="leftsidebar">
+            <ul id="menulist">
+                <li class="menuitem">Menu-item 1</li>
+                <li class="menuitem">Menu-item 2</li>
+                <li class="menuitem">Menu-item 3</li>
+                <li class="menuitem">Menu-item 4</li>
+                <li class="menuitem">Menu-item 5</li>
+            </ul>
+        </div>
+        <div id="main">
+            <textarea name="message" cols="30" rows="5"></textarea>
+            <h1>Resize the browser window to see the effect!</h1>
+            <p>This example shows a menu that will float to the left of the page if the viewport is 480 pixels wide or wider. If the viewport is less than 480 pixels, the menu will be on top of the content.</p>
+        </div>
+    </div>
+</body>
+</html>
