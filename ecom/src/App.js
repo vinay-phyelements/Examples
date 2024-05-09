@@ -5,11 +5,12 @@ import Shop from "./Components/Pages/Shop"
 import Product from "./Components/Pages/Product"
 import Cart from "./Components/Pages/Cart"
 import LoginSignup from "./Components/Pages/LoginSignup"
+import Grid1 from './Components/Grid1';
 
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+      {/* <BrowserRouter>
       <Navbar/>
       <Routes>
       <Route path='/' element={<Shop/>}/>
@@ -24,7 +25,8 @@ function App() {
       <Route path='/loginsignup' element={<LoginSignup/>}/>
 
       </Routes>
-      </BrowserRouter>
+      </BrowserRouter> */}
+      <Grid1/>
     </div>
   );
 }
