@@ -1,0 +1,18 @@
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+table {
+  width: 800px;
+  height: 200px;
+}
+
+h1 {
+  text-align: center;
+}
+
+td {
+  text-align: center;
+}
