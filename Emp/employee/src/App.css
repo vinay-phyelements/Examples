@@ -1,5 +1,9 @@
+*{
+  margin: 5px;
+}
 .App {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -7,6 +11,7 @@
 table {
   width: 800px;
   height: 200px;
+  border: 1px solid black;
 }
 
 h1 {
@@ -15,4 +20,28 @@ h1 {
 
 td {
   text-align: center;
+  border: 1px solid black;
+
+}
+
+th{
+  text-align: center;
+  border: 1px solid black;
+}
+
+label{
+  display: inline-block;
+  width: 80px;
+  background-color: aqua;
+  margin: 5px;
+}
+
+button{
+  margin-left: 125px;
+}
+
+@media screen and (max-width:680px){
+  table{
+    width: 200px;
+  }
 }

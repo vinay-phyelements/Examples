@@ -9,7 +9,7 @@ app.use(express.json())
 mongoose.connect('mongodb://127.0.0.1:27017/crud', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
-  useFindAndModify: false // This line suppresses the deprecated warning
+  useFindAndModify: false
 })
 
 app.post("/v1/createUser", (req, res) => {
